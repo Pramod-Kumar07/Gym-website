@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './Training.module.css';
 
 function Training() {
   return (
-    <div id='training'>Training</div>
+    <div className={styles.wrapper} id='training'>Training</div>
   )
 }
 

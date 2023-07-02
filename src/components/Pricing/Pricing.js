@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './Pricing.module.css';
 
 function Pricing() {
   return (
-    <div id='pricing'>Pricing</div>
+    <div className={styles.wrapper} id='pricing'>Pricing</div>
   )
 }
 

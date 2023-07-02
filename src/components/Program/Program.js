@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './Program.module.css';
 
 function Program() {
   return (
-    <div id='program'>Program</div>
+    <div className={styles.wrapper} id='program'>Program</div>
   )
 }
 

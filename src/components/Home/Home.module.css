@@ -1,0 +1,105 @@
+.wrapper{
+    box-sizing: border-box;
+    height: 87vh;
+    width: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    animation: backgroundPhoto 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundPhoto{
+    0%{
+        background-image: url(../../../public/images/photo1.jpg);
+    }
+    20%{
+        background-image: url(../../../public/images/photo2.jpg);
+    }
+    40%{
+        background-image: url(../../../public/images/photo3.jpg);
+    }
+    60%{
+        background-image: url(../../../public/images/photo4.jpg);
+    }
+    80%{
+        background-image: url(../../../public/images/photo5.jpg);
+    }
+    100%{
+        background-image: url(../../../public/images/photo6.jpg);
+    }
+}
+
+.text{
+    height:100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem ;
+}
+
+.section{
+    display: inline-block;
+    color: teal;
+}
+
+.joinWithUs{
+    background-color: rgb(132, 230, 230);
+    color: teal;
+    font-weight: bold;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.link{
+    text-decoration: none;
+    color: teal;
+}
+
+
+.joinWithUs:hover{
+    cursor: pointer;
+    background-color: bisque;
+    color: teal;
+    animation: vibrate 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vibrate{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(2deg);
+    }
+    20%{
+        transform: rotate(-2deg);
+    }
+    30%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(2deg);
+    }
+    80%{
+        transform: rotate(-2deg);
+    }
+    90%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}

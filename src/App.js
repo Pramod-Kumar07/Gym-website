@@ -6,18 +6,23 @@ import Program from './components/Program/Program';
 import Training from './components/Training/Training';
 import Pricing from './components/Pricing/Pricing';
 import Login from './components/Login/Login';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className={styles.App}>
-      <div className={styles.navbar}><Navbar/></div>
-      <div className={styles.home}><Home/></div>
-      <div className={styles.home}><About/></div>
-      <div className={styles.home}><Program/></div>
-      <div className={styles.home}><Training/></div>
-      <div className={styles.home}><Pricing/></div>
-      <div className={styles.home}><Login/></div>
-    </div>
+      <div className={styles.navbar}>
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path='/login' element={<Login/>} />
+      </Routes>
+      <Home/>
+      <About/>
+      <Program/>
+      <Training/>
+      <Pricing/>    
+  </div>
   );
 }
 

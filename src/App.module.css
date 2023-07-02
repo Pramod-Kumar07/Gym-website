@@ -6,17 +6,14 @@
 .App {
   text-align: center;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .navbar{
   position: sticky;
   top: 0;
+  box-shadow: 0 0 0.2rem rgb(4, 48, 48);
+  z-index: 1;
+  width: 100%;
 }
 
-.home{
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
-}
 
