@@ -1,7 +1,100 @@
 .wrapper{
     box-sizing: border-box;
-    border: 2px solid red;
-    height: 100vh;
+    background: rgb(17, 96, 96);
+    height: 100%;
     width: 100%;
     overflow: hidden;
+    padding: 1rem;
+}
+
+.descriptionWrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.description{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    color: rgb(3, 43, 43);
+    gap: 0.5rem;
+}
+
+.description p{
+    color: rgb(221, 238, 238);
+}
+
+.description button{
+    background-color: rgb(161, 254, 254);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.description button:hover{
+    cursor: pointer;
+    background-color: bisque;
+}
+
+.link{
+    color: teal;
+    text-decoration: none;
+}
+
+.stats{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.stats div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats div section{
+    color: rgb(221, 238, 238);
+}
+
+.photo{
+    height: 12rem;
+    width: 9rem;
+    box-shadow: 0.2rem 0.2rem rgb(161, 254, 254);
+    border-radius: 4rem;
+}
+
+.photo1{
+    display: flex;
+    align-items: flex-start;
+}
+
+.photo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo3{
+    display: flex;
+    align-items: flex-end;
+}
+
+.photos{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.trainingPrograms{
+    color: rgb(3, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding: 0 3rem;
+    border: 2px solid red;
 }

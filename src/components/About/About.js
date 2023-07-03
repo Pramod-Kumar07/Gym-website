@@ -26,7 +26,7 @@ function About() {
             Baker's Gym Has Been The Authority In Fitness Since 1965 Dating Back To The Original Baker's Gym In Venice, California. It Was The Place For Serious Fitness. Opened Long Before The Modern-Day Health Club Existed, The Original Baker's Gym Featured Homemade Equipment And A Dedication To Getting Results. It Was An Instant Hit. Baker's Gym Quickly Became Known As "The Mecca Of Bodybuilding".
           </p>         
 
-          <button onClick={handleLearnMore}>
+          <button onClick={handleLearnMore} >
             Learn More
           </button>
         </div>
