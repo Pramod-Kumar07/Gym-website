@@ -69,7 +69,41 @@ function Program() {
 
         <div className={styles.programsOffered}>
 
-          <img />
+          <div className={styles.bodyBuilding}>
+            <h3>Body Building</h3>
+          </div>
+
+          <div className={styles.yoga}>
+            <h3>
+              Yoga
+            </h3>
+          </div>
+
+          <div className={styles.crossFit}>
+            <h3> Cross-Fit </h3>
+          </div>
+
+          <div className={styles.barre}>
+            <h3>Barre</h3>
+          </div>
+
+          <div className={styles.cardio}>
+            <h3>
+              Cardio
+            </h3>
+          </div>
+
+          <div className={styles.flexibility}>
+            <h3>
+              Flexibility
+            </h3>
+          </div>
+
+          <div className={styles.aerobic}>
+            <h3>
+              Aerobic
+            </h3>
+          </div>
 
         </div>
 

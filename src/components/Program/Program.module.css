@@ -93,8 +93,152 @@
     color: rgb(3, 43, 43);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 2rem;
+    align-items: center;
+    margin-top: 4rem;
     padding: 0 3rem;
-    border: 2px solid red;
+    gap: 2rem;
+}
+
+.programsOffered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.bodyBuilding{
+    background-image: url('./ProgramData/images/bodyBuilding.jpg');
+    background-size: contain;
+    height: 15rem;
+    width: 11rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(69, 231, 231);
+    box-shadow: 0.01rem 0.01rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+.crossFit{
+    background-image: url('./ProgramData/images/crossFit.jpg');
+    background-size: contain;
+    height: 15rem;
+    width: 11rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(69, 231, 231);
+    box-shadow: 0.1rem 0.1rem 4rem rgba(106, 234, 234, 0.475) inset, 0.1rem 0.1rem rgb(161, 254, 254);
+}
+
+.barre{
+    background-image: url('./ProgramData/images/barre.jpg');
+    background-size: contain;
+    height: 15rem;
+    width: 11rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    box-shadow: 0.1rem 0.1rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+.cardio{
+    background-image: url('./ProgramData/images/cardio.jpg');
+    background-size: contain;
+    height: 15rem;
+    width: 11rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(69, 231, 231);
+    box-shadow: 0.1rem 0.1rem 4rem rgba(106, 234, 234, 0.475) inset, 0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+.flexibility{
+    background-image: url('./ProgramData/images/flexibility.jpg');
+    background-size: contain;
+    height: 15rem;
+    width: 11rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0.1rem 0.1rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+.yoga{
+    background-image: url('./ProgramData/images/yoga.jpg');
+    background-size: contain;
+    height: 15rem;
+    width: 11rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0.1rem 0.1rem 4rem rgba(106, 234, 234, 0.475) inset, 0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+.aerobic{
+    background-image: url('./ProgramData/images/aerobic.jpg');
+    background-size: contain;
+    height: 15rem;
+    width: 11rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(69, 231, 231);
+    box-shadow: 0.1rem 0.1rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+@media screen and (width < 500px) {
+    
+    .photos{
+        display: none;
+    }
+
+    .descriptionWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (500px <= width < 900px){
+
+    .descriptionWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 }
