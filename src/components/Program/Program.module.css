@@ -122,6 +122,11 @@
     box-shadow: 0.01rem 0.01rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
 }
 
+.bodyBuilding:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .crossFit{
     background-image: url('./ProgramData/images/crossFit.jpg');
     background-size: contain;
@@ -133,6 +138,11 @@
     justify-content: center;
     color: rgb(69, 231, 231);
     box-shadow: 0.1rem 0.1rem 4rem rgba(106, 234, 234, 0.475) inset, 0.1rem 0.1rem rgb(161, 254, 254);
+}
+
+.crossFit:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .barre{
@@ -148,6 +158,11 @@
     box-shadow: 0.1rem 0.1rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
 }
 
+.barre:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .cardio{
     background-image: url('./ProgramData/images/cardio.jpg');
     background-size: contain;
@@ -159,6 +174,11 @@
     justify-content: center;
     color: rgb(69, 231, 231);
     box-shadow: 0.1rem 0.1rem 4rem rgba(106, 234, 234, 0.475) inset, 0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+.cardio:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .flexibility{
@@ -174,6 +194,11 @@
     box-shadow: 0.1rem 0.1rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
 }
 
+.flexibility:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .yoga{
     background-image: url('./ProgramData/images/yoga.jpg');
     background-size: contain;
@@ -187,6 +212,11 @@
     box-shadow: 0.1rem 0.1rem 4rem rgba(106, 234, 234, 0.475) inset, 0.1rem 0.1rem rgb(20, 33, 33);
 }
 
+.yoga:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .aerobic{
     background-image: url('./ProgramData/images/aerobic.jpg');
     background-size: contain;
@@ -198,6 +228,11 @@
     justify-content: center;
     color: rgb(69, 231, 231);
     box-shadow: 0.1rem 0.1rem 4rem rgb(27, 221, 221) inset,  0.1rem 0.1rem rgb(20, 33, 33);
+}
+
+.aerobic:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 @media screen and (width < 500px) {
