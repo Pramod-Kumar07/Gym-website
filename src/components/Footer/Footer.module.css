@@ -1,0 +1,81 @@
+.wrapper{
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftContainer{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.leftContainer h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(5, 30, 30);
+}
+
+.leftContainer h2:hover{
+    color: rgb(94, 227, 227);
+    text-decoration: underline;
+}
+
+.leftContainer p{
+    text-align: justify;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.leftContainer div{
+    display: flex;
+    gap: 1rem;
+}
+
+.socialMedia{
+    font-size: 1.5rem;
+    color: rgb(5, 30, 30);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia:hover{
+    color: rgb(94, 227, 227);
+}
+
+.content{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.content div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-weight: bold;
+    color: rgb(5, 30, 30);
+}
+
+@media screen and (width <= 900px) {
+
+    .content{
+        display: none;
+    }
+
+    .leftContainer{
+        width: 100%;
+    }
+
+}

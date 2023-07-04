@@ -3,6 +3,7 @@ import { BiDollar } from 'react-icons/bi';
 import { BsCheck2Circle } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
+import Footer from '../Footer/Footer';
 
 function Pricing() {
 
@@ -190,6 +191,10 @@ function Pricing() {
           </div>
         </div>
 
+      </div>
+
+      <div>
+        <Footer/>
       </div>
 
 
