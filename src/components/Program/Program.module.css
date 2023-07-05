@@ -257,6 +257,15 @@
         width: 100%;
     }
 
+    .programsOffered{
+        height: 20rem;
+        overflow-y: auto;
+    }
+
+    .programsOffered::-webkit-scrollbar{
+        width: 0;
+    }
+
 }
 
 @media screen and (500px <= width < 900px){

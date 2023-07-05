@@ -38,7 +38,7 @@ function Navbar() {
                     Program
                 </section>
             </NavHashLink>
-            <NavHashLink to="/#training" smooth className={styles.link} >
+            <NavHashLink to="/#trainingPrograms" smooth className={styles.link} >
                 <section>
                     Training
                 </section>
