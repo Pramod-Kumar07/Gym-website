@@ -1,44 +1,4 @@
-// import styles from './Login.module.css';
-
-// function Login() {
-//   return (
-//     <div className={styles.wrapper} id='login'>
-    
-//       <div className={styles.form}>
-//         <form>
-//           <input type='text' placeholder='Enter First Name'/>
-//           <input type='text' placeholder='Enter Last Name' />
-//           <input type='tel' placeholder='Enter Mobile Number' />
-//           <input type='email' placeholder='Enter Email' />
-//           <select>
-//             <option> Select Your Gender</option>
-//             <option> Male</option>
-//             <option> Female</option>
-//           </select>
-//         </form>
-//       </div>
-
-//     </div>
-//   )
-// }
-
-// export default Login
-
-// import FormControl from '@mui/base/FormControl';
-// import Input from '@mui/base/Input';
-
-// export default function Login() {
-//   return (
-//     <div className={styles.wrapper} id='login'>
-//     <FormControl>
-//       {/* <Input /> */}
-//       <Input slots={{ root: 'aside', input: CustomInput }} />
-
-//     </FormControl>
-//     </div>
-//   );
-// }
-
+import styles from './Login.module.css';
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
@@ -47,8 +7,12 @@ import Input, { inputClasses } from '@mui/base/Input';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { styled } from '@mui/system';
+import { useState } from 'react';
+import { NavHashLink } from 'react-router-hash-link';
+import Swal from 'sweetalert2';
 
 const CustomInput = React.forwardRef(function CustomInput(props, ref) {
+
   const { slots, ...other } = props;
   return (
     <Input
@@ -64,11 +28,7 @@ const CustomInput = React.forwardRef(function CustomInput(props, ref) {
 });
 
 CustomInput.propTypes = {
-  /**
-   * The components used for each slot inside the InputBase.
-   * Either a string to use a HTML element or a component.
-   * @default {}
-   */
+
   slots: PropTypes.shape({
     input: PropTypes.elementType,
     root: PropTypes.elementType,
@@ -84,6 +44,35 @@ export default function InputAdornments() {
     weightRange: '',
     showPassword: false,
   });
+
+  const [toggle, setToggle] = useState(false);
+
+  const toggleLogIn = () => {
+    setToggle(!toggle)
+  }
+
+  const register = () => {
+    setToggle(!toggle);
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      iconColor: 'teal',
+      title: 'Registered Successfully',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  }
+
+  const handleLogin = () => {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      iconColor: 'teal',
+      title: 'LoggedIn Successfully',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  }
 
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value });
@@ -101,6 +90,7 @@ export default function InputAdornments() {
   };
 
   return (
+    <div className={styles.wrapper}>
     <Box
       sx={{
         display: 'flex',
@@ -108,15 +98,40 @@ export default function InputAdornments() {
         gap: 2,
       }}
     >
+      { !toggle ?
+      <div className={styles.container} >
+        <h3>Register</h3>
       <CustomInput
         id="outlined-start-adornment"
         startAdornment={<InputAdornment>First Name</InputAdornment>}
       />
       <CustomInput
+        id="outlined-start-adornment"
+        startAdornment={<InputAdornment>Last Name</InputAdornment>}
+      />
+      <CustomInput
+        id="outlined-start-adornment"
+        startAdornment={<InputAdornment>Gender</InputAdornment>}
+      />
+      <CustomInput
+        id="outlined-start-adornment"
+        startAdornment={<InputAdornment>Age</InputAdornment>}
+      />
+      <CustomInput
+        id="outlined-start-adornment"
+        startAdornment={<InputAdornment>Email</InputAdornment>}
+      />
+      <CustomInput
+        id="outlined-start-adornment"
+        startAdornment={<InputAdornment>Mobile Number</InputAdornment>}
+      />
+      
+      <CustomInput
         id="outlined-adornment-password"
         type={values.showPassword ? 'text' : 'password'}
         value={values.password}
         onChange={handleChange('password')}
+        startAdornment={<InputAdornment>Password</InputAdornment>}
         endAdornment={
           <InputAdornment>
             <IconButton
@@ -129,15 +144,52 @@ export default function InputAdornments() {
           </InputAdornment>
         }
       />
+      <Button onClick={register}>Register</Button>
+      <p onClick={toggleLogIn}>Already a member</p>
+      </div> :
+      <div className={styles.login}>
+        <h3>Login</h3>
+        <CustomInput
+        id="outlined-start-adornment"
+        startAdornment={<InputAdornment>Email</InputAdornment>}
+        />
+      <CustomInput
+        id="outlined-adornment-password"
+        type={values.showPassword ? 'text' : 'password'}
+        value={values.password}
+        onChange={handleChange('password')}
+        startAdornment={<InputAdornment>Password</InputAdornment>}
+        endAdornment={
+          <InputAdornment>
+            <IconButton
+              aria-label="toggle password visibility"
+              onClick={handleClickShowPassword}
+              onMouseDown={handleMouseDownPassword}
+            >
+              {values.showPassword ? <VisibilityOff /> : <Visibility />}
+            </IconButton>
+          </InputAdornment>
+        }
+      />
+      <Button onClick={handleLogin}>
+        <NavHashLink to='/#home' smooth className={styles.link}>
+          <section>Login</section>
+        </NavHashLink>
+      </Button>
+      <p onClick={toggleLogIn}>Not a Member, Register</p>
+      </div>
+      }
+      
     </Box>
+    </div>
   );
 }
 
 const blue = {
   100: '#DAECFF',
-  200: '#80BFFF',
-  400: '#3399FF',
-  500: '#007FFF',
+  200: '#66b2b2',
+  400: '#008080',
+  500: '#006666',
   600: '#0072E5',
 };
 
@@ -145,9 +197,9 @@ const grey = {
   50: '#F3F6F9',
   100: '#E7EBF0',
   200: '#E0E3E7',
-  300: '#CDD2D7',
+  300: '#004c4c',
   400: '#B2BAC2',
-  500: '#A0AAB4',
+  500: '#004c4c',
   600: '#6F7E8C',
   700: '#3E5060',
   800: '#2D3843',
