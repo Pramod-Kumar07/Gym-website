@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# WELCOME TO BAKER'S GYM
+# Gym Website: using React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<ul>
+  <li> Baker's gym is a template of gym website which contains multiple scrollable pages and functional components. It is a blend of react.js with react-router-hash-link, react-router-dom, react-player, sweetalert2, react-icons, and material UI</li>
+  <li> Gym website facilitates it's visitors to have a look over tarining programs, team and Plans that Baker's Gym provide</li>
+  <li> The website is responsive means can be acessed in any device</li>
+</ul>
 
-## Available Scripts
+# Deployment Site Link
 
-In the project directory, you can run:
+open [https://bakersgym.netlify.app/](https://bakersgym.netlify.app/) in your browser to have a look at Baker's Gym
+
+## Some Glimpses
+
+<img src='./public/images/ss1.png' />
+
+<img src='./public/images/ss2.png' />
+
+<img src='./public/images/ss3.png' />
+
+<img src='./public/images/ss4.png' />
+
+<img src='./public/images/ss5.png' />
+
+<img src='./public/images/ss6.png' />
+
+## Tech Stack used in this project
+
+<ol>
+  <li>react.js</li>
+  <li>CSS</li>
+  <li>react-router-hash-link</li>  
+  <li>react-router-dom</li>
+  <li>react-player</li>
+  <li>material UI</li>
+  <li>sweetalert2</li>
+  <li>react-icons</li>
+</ol>
+
+## Author
+
+Pramod Kumar [https://github.com/Pramod-Kumar07/Gym-website](https://github.com/Pramod-Kumar07/Gym-website)
+
+### Install 
+
+npm install 
+
+### Usage
+
+npm run start
+
+### Run Tests
+
+npm run test
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Show Support
 
-### `npm test`
+Thank you so much already for using my projects! If you want to go a step further and give a <img src="https://www.svgrepo.com/show/13695/star.svg" height='12px' width='12px' />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
