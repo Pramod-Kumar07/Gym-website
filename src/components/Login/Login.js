@@ -54,23 +54,25 @@ export default function InputAdornments() {
   const register = () => {
     setToggle(!toggle);
     Swal.fire({
+      toast: true,
       position: 'top-end',
       icon: 'success',
       iconColor: 'teal',
-      title: 'Registered Successfully',
+      titleText: 'Registered Successfully',
       showConfirmButton: false,
-      timer: 1500
+      timer: 1300,
     })
   }
 
   const handleLogin = () => {
     Swal.fire({
+      toast: true,
       position: 'top-end',
       icon: 'success',
       iconColor: 'teal',
       title: 'LoggedIn Successfully',
       showConfirmButton: false,
-      timer: 1500
+      timer: 1300
     })
   }
 
