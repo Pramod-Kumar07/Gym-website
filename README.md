@@ -13,17 +13,20 @@ open [https://bakersgym.netlify.app/](https://bakersgym.netlify.app/) in your br
 
 ## Some Glimpses
 
-<img src='./public/images/ss1.png' />
 
-<img src='./public/images/ss2.png' />
+<img width="945" alt="ss1" src="https://github.com/Pramod-Kumar07/Gym-website/assets/123134499/0e310c93-e385-4849-8c89-8339f79fd73c">
 
-<img src='./public/images/ss3.png' />
 
-<img src='./public/images/ss4.png' />
+<img width="944" alt="ss2" src="https://github.com/Pramod-Kumar07/Gym-website/assets/123134499/2f339145-34e3-44fc-a46e-b5ef9da27bce">
 
-<img src='./public/images/ss5.png' />
+<img width="946" alt="ss3" src="https://github.com/Pramod-Kumar07/Gym-website/assets/123134499/3583c260-6e3c-423f-b7f3-f45799333c8b">
 
-<img src='./public/images/ss6.png' />
+<img width="943" alt="ss4" src="https://github.com/Pramod-Kumar07/Gym-website/assets/123134499/5571303f-d1aa-4606-92a5-10f9db8692f0">
+
+<img width="946" alt="ss5" src="https://github.com/Pramod-Kumar07/Gym-website/assets/123134499/e48918a7-f3c8-492a-bdcd-ceaf2d24e3aa">
+
+<img width="942" alt="ss6" src="https://github.com/Pramod-Kumar07/Gym-website/assets/123134499/9f1634a5-b079-4cb1-a547-283ba6943057">
+
 
 ## Tech Stack used in this project
 
@@ -61,7 +64,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Show Support
 
-Thank you so much already for using my projects! If you want to go a step further and give a <img src="https://www.svgrepo.com/show/13695/star.svg" height='12px' width='12px' />
+Thank you so much already for using my projects! If you want to go a step further, give a <img src="https://www.svgrepo.com/show/13695/star.svg" height='12px' width='12px' /> 
 
 
 
